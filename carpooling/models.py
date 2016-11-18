@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from django.db import models
 from datetime import datetime
 today  = str(datetime.now().date())
-
+#this is a test
 class Registration(models.Model):
 	first_name = models.CharField(max_length=200,default="")
 	last_name = models.CharField(max_length=200,default="")
