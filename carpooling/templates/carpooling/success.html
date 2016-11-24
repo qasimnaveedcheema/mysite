@@ -1,1 +1,12 @@
-<h1>Your ride is scheduled</h1>
+{% extends "carpooling/base.html" %}
+ Registration Completed Successfully
+{% block content %}
+<div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+    Thank you for registering.
+    Please <a class="btn" href="/login/">Login</a>  to continue.
+    </div></div></div></div></div>
+{% endblock %}

@@ -1,0 +1,31 @@
+
+
+
+{% extends 'carpooling/base.html'%}
+{% block content%}
+
+
+<script type="text/javascript" src="http://www.clubdesign.at/floatlabels.js"></script>
+
+<div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			   		<h3 class="panel-title">Join/Start a ride... <small>It's free!</small></h3>
+						</div>
+						<div class="panel-body">
+			   		<form method="post" action=".">{%csrf_token%}
+        <table border="0">
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Register" />
+    </form>
+    <a href="/">Login</a>
+			   	</div>
+	   		</div>
+    		</div>
+    	</div>
+    </div>
+    
+   {%endblock%}
