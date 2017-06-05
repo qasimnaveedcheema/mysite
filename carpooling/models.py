@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-
+# import model from django
 from django.db import models
 from datetime import datetime
 today  = str(datetime.now().date())
